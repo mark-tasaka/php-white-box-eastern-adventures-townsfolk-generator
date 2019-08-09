@@ -30,6 +30,7 @@
         include 'php/names.php';
         include 'php/personality.php';
         include 'php/age.php';
+        include 'php/heightWeight.php';
         
         
         
@@ -165,6 +166,10 @@
         $age9 = getAge ($ageCat9);
         $age10 = getAge ($ageCat10);
         $age11 = getAge ($ageCat11);
+
+        $sizeCat0 = getSize($ageCat0, $sex0)[0];
+        $height0 = getSize($ageCat0, $sex0)[1];
+        $weight0 = getSize($ageCat0, $sex0)[2];
         
         
         ?>
@@ -227,6 +232,20 @@
                 
                 ?>
             </span>
+
+            
+            <span id="height0">
+                <?php
+                echo $height0;
+                ?>
+            </span>
+
+            <span id="weight0">
+                <?php
+                echo $weight0 . ' lb.';
+                ?>
+            </span>
+
 
             
         </aside>

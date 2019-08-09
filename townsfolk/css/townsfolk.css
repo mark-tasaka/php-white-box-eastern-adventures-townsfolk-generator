@@ -185,3 +185,18 @@ body{
     font-size: 0.8em;
     width: 350px;
 }
+
+
+#height0, #height1, #height2, #height3, #height4, #height5, #height6, #height7, #height8, #height9, #height10, #height11{
+    position: absolute;
+    top: 87px;
+    left: 180px;
+    font-size: 1em;
+}
+
+#weight0, #weight1, #weight2, #weight3, #weight4, #weight5, #weight6, #weight7, #weight8, #weight9, #weight10, #weight11{
+    position: absolute;
+    top: 87px;
+    left: 275px;
+    font-size: 1em;
+}

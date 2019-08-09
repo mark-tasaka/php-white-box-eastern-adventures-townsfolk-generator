@@ -6,11 +6,7 @@ function getRandomAge ()
 
     $select = rand(0, 19);
 
-    if($select === 0)
-    {
-        $cat = 'Child';
-    }
-    else if($select >= 1 && $select <=3)
+    if($select >= 0 && $select <=3)
     {
         $cat = 'Youth';
     }
@@ -41,21 +37,17 @@ function getAgeCat($choice)
     }
     else if($choice == 2)
     {
-        $cat = 'Child';
+        $cat = 'Youth';
     }
     else if($choice == 3)
     {
-        $cat = 'Youth';
+        $cat = 'Adult';
     }
     else if($choice == 4)
     {
-        $cat = 'Adult';
-    }
-    else if($choice == 5)
-    {
         $cat = 'Middle Age';
     }
-    else if($choice == 6)
+    else if($choice == 5)
     {
         $cat = 'Elder';
     }
