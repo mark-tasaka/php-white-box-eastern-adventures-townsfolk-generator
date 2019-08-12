@@ -1,5 +1,17 @@
 <?php
 
+function getSizeGroup ()
+{
+    $group = rand(1, 8);
+
+    return $group;
+}
+
+function getHeight($group, $age, $sex)
+{
+
+}
+
 function adultMaleSize()
 {
         $a01 = array(1, "5' 4\" ", 135);
