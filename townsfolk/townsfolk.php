@@ -167,13 +167,18 @@
         $age10 = getAge ($ageCat10);
         $age11 = getAge ($ageCat11);
 
-        /*
-        $sizeCat0 = getSize($ageCat0, $sex0)[0];
-        $height0 = getSize($ageCat0, $sex0)[1];
-        $weight0 = getSize($ageCat0, $sex0)[2];
-        */
 
         $group0 = getSizeGroup ();
+
+        $groupMod0 = getSizeCat($group0, $ageCat0, $sex0);
+
+        $height0 = getHeight($groupMod0);
+
+        $baseWeight0 = baseWeight($groupMod0, $sex0, $ageCat0);
+
+        $weightGroup0 = getWeightGroup ($ageCat0);
+
+        $weight0 = getWeight($baseWeight0, $weightGroup0, $groupMod0);
         
         
         ?>
@@ -240,7 +245,7 @@
             
             <span id="height0">
                 <?php
-                echo $group0;
+                echo $height0;
                 ?>
             </span>
 
@@ -248,7 +253,7 @@
 
             <span id="weight0">
                 <?php
-                echo ' lb.';
+                echo  $weight0 . ' lb. ' . '('. $weightGroup0 . ')';
                 ?>
             </span>
 

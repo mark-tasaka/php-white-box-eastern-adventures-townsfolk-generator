@@ -7,126 +7,259 @@ function getSizeGroup ()
     return $group;
 }
 
-function getHeight($group, $age, $sex)
+function heightCharts ($cat)
 {
+    $height = "Error";
 
+    switch($cat)
+    {
+        case 1:
+        $height = "4' 8";
+        break;
+        
+        case 2:
+        $height = "4' 9";
+        break;
+        
+        case 3:
+        $height = "4' 10";
+        break;
+
+        case 4:
+        $height = "4' 11";
+        break;
+
+        case 5:
+        $height = "5";
+        break;
+
+        case 6:
+        $height = "5' 1";
+        break;
+
+        case 7:
+        $height = "5' 2";
+        break;
+
+        case 8:
+        $height = "5' 3";
+        break;
+
+        case 9:
+        $height = "5' 4";
+        break;
+
+        case 10:
+        $height = "5' 5";
+        break;
+
+        case 11:
+        $height = "5' 6";
+        break;
+
+        case 12:
+        $height = "5' 7";
+        break;
+
+        case 13:
+        $height = "5' 8";
+        break;
+
+        case 14:
+        $height = "5' 9";
+        break;
+
+        case 15:
+        $height = "5' 10";
+        break;
+
+        case 16:
+        $height = "5' 11";
+        break;
+
+        case 17:
+        $height = "6'";
+        break;
+
+        case 18:
+        $height = "6' 1";
+        break;
+
+        default:
+        $height = "default case";
+    }
+
+    return $height;
 }
 
-function adultMaleSize()
+function getSizeCat($group, $age, $sex)
 {
-        $a01 = array(1, "5' 4\" ", 135);
-        $a02 = array(2, "5' 5\" ", 140);
-        $a03 = array(3, "5' 6\" ", 145);
-        $a04 = array(4, "5' 7\" ", 145);
-        $a05 = array(5, "5' 8\" ", 150);
-        $a06 = array(6, "5' 9\" ", 150);
-        $a07 = array(7, "5' 10\" ", 155);
-        $a08 = array(8, "5' 11\" ", 155);
-        $a09 = array(9, "6'", 160);
+    $adjustAge = 0;
+    $adjustSex = 0;
 
-        $array1= array($a01, $a02, $a03, $a04, $a05, $a06, $a07, $a08, $a09);
+    $cat = 0;
+    $height = "";
 
-        $num = rand(0,8);
-
-        return $array1[$num];
-}
-
-function youthMaleSize()
-{
-        $a01 = array(1, "5' 2\" ", 115);
-        $a02 = array(2, "5' 3\" ", 120);
-        $a03 = array(3, "5' 4\" ", 125);
-        $a04 = array(4, "5' 5\" ", 125);
-        $a05 = array(5, "5' 6\" ", 130);
-        $a06 = array(6, "5' 7\" ", 130);
-        $a07 = array(7, "5' 8\" ", 135);
-        $a08 = array(8, "5' 9\" ", 135);
-        $a09 = array(9, "5' 10\" ", 150);
-
-        $array1= array($a01, $a02, $a03, $a04, $a05, $a06, $a07, $a08, $a09);
-
-        $num = rand(0,8);
-
-        return $array1[$num];
-}
-
-
-
-function adultFemaleSize()
-{
-        $a01 = array(1, "4' 10\" ", 100);
-        $a02 = array(2, "4' 11\" ", 100);
-        $a03 = array(3, "5'", 105);
-        $a04 = array(4, "5' 1\" ", 105);
-        $a05 = array(5, "5' 2\" ", 110);
-        $a06 = array(6, "5' 3\" ", 110);
-        $a07 = array(7, "5' 4\" ", 115);
-        $a08 = array(8, "5' 5\" ", 120);
-        $a09 = array(9, "5' 6\" ", 120);
-
-        $array1= array($a01, $a02, $a03, $a04, $a05, $a06, $a07, $a08, $a09);
-
-        $num = rand(0,8);
-
-        return $array1[$num];
-}
-
-
-function youthFemaleSize()
-{
-        $a01 = array(1, "4' 8\" ", 85);
-        $a02 = array(2, "4' 9\" ", 90);
-        $a03 = array(3, "4' 10\" ", 90);
-        $a04 = array(4, "4' 11\" ", 95);
-        $a05 = array(5, "5' ", 100);
-        $a06 = array(6, "5' 1\" ", 100);
-        $a07 = array(7, "5' 2\" ", 105);
-        $a08 = array(8, "5' 3\" ", 105);
-        $a09 = array(9, "5' 4\" ", 105);
-
-        $array1= array($a01, $a02, $a03, $a04, $a05, $a06, $a07, $a08, $a09);
-
-        $num = rand(0,8);
-
-        return $array1[$num];
-}
-
-
-
-
-
-function getSize($cat, $sex)
-{
-    $townsfolkSize = array();
+    if($age === 'Adult')
+    {
+        $adjustAge = 4;
+    }
+    
+    if($age === 'Elder')
+    {
+        $adjustAge = 2;
+    }
 
     if($sex === 'Male')
     {
-        if($cat === 'Youth' || $cat === 'Elder')
-        {
-            $townsfolkSize = youthMaleSize();
-        }
-        else
-        {
-            $townsfolkSize = adultMaleSize();
-        }
+        $adjustSex = 5;
     }
 
-    
-    if($sex === 'Female')
-    {
-        if($cat === 'Youth' || $cat === 'Elder')
-        {
-            $townsfolkSize = youthFemaleSize();
-        }
-        else
-        {
-            $townsfolkSize = adultFemaleSize();
-        }
-    }
+    $cat = ($group + $adjustAge + $adjustSex);
 
-    return $townsfolkSize;
+    return $cat;
 
 }
+
+function getHeight($cat)
+{
+    $height = heightCharts ($cat);
+
+    return $height;
+
+}
+
+function baseWeight($cat, $sex, $age)
+{
+    $base = 70;
+    $adjustAge = 0;
+    $adjustSex = 0;
+    $baseWeight = 0;
+    $heightAdjustment = ($cat * 4);
+    
+    if($sex === 'Male')
+    {
+        $adjustSex = 20;
+    }
+    
+    if($age === 'Adult')
+    {
+        $adjustAge = 20;
+    }
+    
+    if($age === 'Elder')
+    {
+        $adjustAge = 10;
+    }
+
+    $baseWeight = ($base + $adjustSex + $adjustAge +$heightAdjustment);
+
+    return $baseWeight;
+
+}
+
+function weightGroupYouth ()
+{
+    $weightGroup = 0;
+
+    $selectNum = rand (0, 9);
+
+    if($selectNum === 0)
+    {
+        $weightGroup = 3;
+    }
+    else if($selectNum >= 1 && $selectNum <= 5 )
+    {
+        $weightGroup = 2;
+    }
+    else
+    {
+        $weightGroup = 1;
+    }
+
+    return $weightGroup;
+}
+
+function weightGroupAdult ()
+{
+    $weightGroup = 0;
+
+    $selectNum = rand (0, 9);
+
+    if($selectNum >= 0 && $selectNum <= 3)
+    {
+        $weightGroup = 3;
+    }
+    else if($selectNum >= 4 && $selectNum <= 7)
+    {
+        $weightGroup = 2;
+    }
+    else
+    {
+        $weightGroup = 1;
+    }
+
+    return $weightGroup;
+}
+
+//group 1: underweight
+//group 2: average
+//group 3: overweight
+function getWeightGroup ($age)
+{
+    $weightGroup = 0;
+
+    if($age === 'Youth')
+    {
+        $weightGroup = weightGroupYouth();
+    }
+    else
+    {
+        $weightGroup = weightGroupAdult();
+    }
+
+    return $weightGroup;
+}
+
+function getWeight($baseWeight, $weightGroup, $heightGroup)
+{
+    $weight = 0;
+    $adjust = 0;
+
+    if($weightGroup === 1)
+    {
+        for($i = 0; $i < $heightGroup; ++$i)
+        {
+            $tempHold = 0;
+            $tempHold = rand(0,3);
+            $adjust -= $tempHold;
+        }
+    }
+    else if($weightGroup === 2)
+    {
+        for($i = 0; $i < $heightGroup; ++$i)
+        {
+            $tempHold = 0;
+            $tempHold = rand(0,2);
+            $adjust += $tempHold;
+        }
+    }
+    else if($weightGroup === 3)
+    {
+        for($i = 0; $i < $heightGroup; ++$i)
+        {
+            $tempHold = 0;
+            $tempHold = rand(3,6);
+            $adjust += $tempHold;
+        }
+    }
+
+    $weight = $baseWeight + $adjust;
+
+    return $weight;
+}
+
+
 
 
 ?>
