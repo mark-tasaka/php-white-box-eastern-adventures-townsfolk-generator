@@ -30,7 +30,7 @@ function heightCharts ($cat)
         break;
 
         case 5:
-        $height = "5";
+        $height = "5'";
         break;
 
         case 6:
@@ -135,7 +135,7 @@ function baseWeight($cat, $sex, $age)
     $adjustAge = 0;
     $adjustSex = 0;
     $baseWeight = 0;
-    $heightAdjustment = ($cat * 4);
+    $heightAdjustment = ($cat * 3);
     
     if($sex === 'Male')
     {
@@ -144,7 +144,7 @@ function baseWeight($cat, $sex, $age)
     
     if($age === 'Adult')
     {
-        $adjustAge = 20;
+        $adjustAge = 15;
     }
     
     if($age === 'Elder')
@@ -231,7 +231,7 @@ function getWeight($baseWeight, $weightGroup, $heightGroup)
         for($i = 0; $i < $heightGroup; ++$i)
         {
             $tempHold = 0;
-            $tempHold = rand(0,3);
+            $tempHold = rand(1,3);
             $adjust -= $tempHold;
         }
     }
@@ -249,7 +249,7 @@ function getWeight($baseWeight, $weightGroup, $heightGroup)
         for($i = 0; $i < $heightGroup; ++$i)
         {
             $tempHold = 0;
-            $tempHold = rand(3,6);
+            $tempHold = rand(3,9);
             $adjust += $tempHold;
         }
     }
@@ -257,6 +257,49 @@ function getWeight($baseWeight, $weightGroup, $heightGroup)
     $weight = $baseWeight + $adjust;
 
     return $weight;
+}
+
+function adultMaleBodyType ($weightGroup)
+{
+    $type = '';
+    
+    $slimType = array("Slender", "Lean", "Skinny", "Slim", "Lanky", "Frail");
+
+    shuffle($slimType);
+    
+    $mediumType = array("Medium Build", "Fit", "Healthy Build");
+
+    shuffle($mediumType);
+    
+    $heavyType = array("Stocky", "Paunchy", "Over-weight", "Muscular", "Plump");
+
+    shuffle($heavyType);
+
+    if($weightGroup === 1)
+    {
+        $type = $slimType[0];
+    }
+
+    if($weightGroup === 2)
+    {
+        $type = $mediumType[0];
+    }
+
+    if($weightGroup === 3)
+    {
+        $type = $heavyType[0];
+    }
+
+    return $type;
+}
+
+function getBodyDescription ($weightGroup)
+{
+    $description = '';
+
+    $description = adultMaleBodyType ($weightGroup);
+
+    return $description;
 }
 
 

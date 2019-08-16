@@ -179,6 +179,8 @@
         $weightGroup0 = getWeightGroup ($ageCat0);
 
         $weight0 = getWeight($baseWeight0, $weightGroup0, $groupMod0);
+
+        $bodyTypeDescription0 = getBodyDescription ($weightGroup0);
         
         
         ?>
@@ -253,7 +255,7 @@
 
             <span id="weight0">
                 <?php
-                echo  $weight0 . ' lb. ' . '('. $weightGroup0 . ')';
+                echo  $weight0 . ' lb. ' . '('. $bodyTypeDescription0 . ')';
                 ?>
             </span>
 
