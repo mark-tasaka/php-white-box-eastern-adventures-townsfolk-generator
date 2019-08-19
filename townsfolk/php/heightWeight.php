@@ -249,7 +249,7 @@ function getWeight($baseWeight, $weightGroup, $heightGroup)
         for($i = 0; $i < $heightGroup; ++$i)
         {
             $tempHold = 0;
-            $tempHold = rand(3,9);
+            $tempHold = rand(4,9);
             $adjust += $tempHold;
         }
     }
@@ -267,11 +267,11 @@ function adultMaleBodyType ($weightGroup)
 
     shuffle($slimType);
     
-    $mediumType = array("Medium Build", "Fit", "Healthy Build");
+    $mediumType = array("Medium Build", "Average Build");
 
     shuffle($mediumType);
     
-    $heavyType = array("Stocky", "Paunchy", "Over-weight", "Muscular", "Plump");
+    $heavyType = array("Stocky", "Paunchy", "Overweight", "Muscular", "Plump");
 
     shuffle($heavyType);
 
@@ -293,6 +293,7 @@ function adultMaleBodyType ($weightGroup)
     return $type;
 }
 
+//
 function getBodyDescription ($weightGroup)
 {
     $description = '';

@@ -200,3 +200,11 @@ body{
     left: 275px;
     font-size: 1em;
 }
+
+
+#physical0, #physical1, #physical2, #physical3, #physical4, #physical5, #physical6, #physical7, #physical8, #physical9, #physical10, #physical11{
+    position: absolute;
+    top: 110px;
+    left: 140px;
+    font-size: 0.8em;
+}

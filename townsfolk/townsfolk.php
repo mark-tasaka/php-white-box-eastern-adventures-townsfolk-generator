@@ -31,6 +31,7 @@
         include 'php/personality.php';
         include 'php/age.php';
         include 'php/heightWeight.php';
+        include 'php/literacy.php';
         
         
         
@@ -255,9 +256,17 @@
 
             <span id="weight0">
                 <?php
-                echo  $weight0 . ' lb. ' . '('. $bodyTypeDescription0 . ')';
+                echo  $weight0 . ' lb.';
                 ?>
             </span>
+            
+            <span id="physical0">
+                <?php
+                echo $bodyTypeDescription0 . ',';
+                ?>
+            </span>
+
+
 
 
             
