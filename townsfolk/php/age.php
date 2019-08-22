@@ -60,11 +60,7 @@ function getAge ($category)
 {
     $age = 0;
 
-    if($category === 'Child')
-    {
-        $age = rand(5, 12);
-    }
-    else if($category === 'Youth')
+    if($category === 'Youth')
     {
         $age = rand(13, 18);
     }
