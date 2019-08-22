@@ -32,6 +32,7 @@
         include 'php/age.php';
         include 'php/heightWeight.php';
         include 'php/literacy.php';
+        include 'php/hitDice.php';
         
         
         
@@ -182,6 +183,10 @@
         $weight0 = getWeight($baseWeight0, $weightGroup0, $groupMod0);
 
         $bodyTypeDescription0 = getBodyDescription ($weightGroup0);
+
+        $hitDiceCat0 = getHitDiceCat($ageCat0);
+
+        $hitDice0 = hitDiceDesc ($hitDiceCat0);
         
         
         ?>
@@ -263,6 +268,13 @@
             <span id="physical0">
                 <?php
                 echo $bodyTypeDescription0 . ',';
+                ?>
+            </span>
+
+            
+            <span id="hitDice0">
+                <?php
+                echo $hitDice0;
                 ?>
             </span>
 
