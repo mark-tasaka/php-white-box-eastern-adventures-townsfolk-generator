@@ -15,16 +15,18 @@ function getHitPoints ($cat)
         break;
 
         case 2:
-        $desc = '1';
+        $hitPoints = rand(1, 6);
         break;
 
         case 3:
-        $desc = '1+1';
+        $hitPoints = rand(2, 7);
         break;
 
         default:
-        $desc = 'Error Msg';
+        $hitPoints = 999;
     }
+
+    return $hitPoints;
 
 }
 

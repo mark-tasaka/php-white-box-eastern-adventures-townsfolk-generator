@@ -114,7 +114,6 @@ function getPersonalityPositiveThree()
         'Responsible',
         'Responsive',
         'Rustic',
-        'Scholarly',
         'Scrupulous'
         );
     
@@ -157,7 +156,6 @@ function getPersonalityPositiveFour()
         'Undogmatic',
         'Venturesome',
         'Warm',
-        'Well-read',
         'Well-rounded',
         'Wise',
         'Youthful'
