@@ -187,6 +187,12 @@
         $hitDiceCat0 = getHitDiceCat($ageCat0);
 
         $hitDice0 = hitDiceDesc ($hitDiceCat0);
+
+        $hitPoints0 = getHitPoints ($hitDice0);
+
+        $save0 = getSave ($hitDiceCat0);
+
+        $literacy0 = getLiteracy ($ageCat0);
         
         
         ?>
@@ -277,6 +283,26 @@
                 echo $hitDice0;
                 ?>
             </span>
+            
+            <span id="hp0">
+                <?php
+                echo $hitPoints0;
+                ?>
+            </span>
+            
+            <span id="save0">
+                <?php
+                echo $save0;
+                ?>
+            </span>
+
+            <span id="literacy0">
+                <?php
+                echo $literacy0;
+                ?>
+            </span>
+
+            
 
 
 
