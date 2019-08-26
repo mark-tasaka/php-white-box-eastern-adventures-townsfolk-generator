@@ -267,7 +267,7 @@ function adultMaleBodyType ($weightGroup)
 
     shuffle($slimType);
     
-    $mediumType = array("Medium Build", "Average Build");
+    $mediumType = array("Medium Build", "Average Build", "Healthy body weight");
 
     shuffle($mediumType);
     
@@ -293,12 +293,185 @@ function adultMaleBodyType ($weightGroup)
     return $type;
 }
 
-//
-function getBodyDescription ($weightGroup)
+function adultFemaleBodyType ($weightGroup)
+{
+    $type = '';
+    
+    $slimType = array("Slender", "Lean", "Skinny", "Slim", "Thin", "Frail", "Delicate");
+
+    shuffle($slimType);
+    
+    $mediumType = array("Medium Build", "Average Build", "Healthy body weight");
+
+    shuffle($mediumType);
+    
+    $heavyType = array("Full-figured", "Overweight");
+
+    shuffle($heavyType);
+
+    if($weightGroup === 1)
+    {
+        $type = $slimType[0];
+    }
+
+    if($weightGroup === 2)
+    {
+        $type = $mediumType[0];
+    }
+
+    if($weightGroup === 3)
+    {
+        $type = $heavyType[0];
+    }
+
+    return $type;
+}
+
+function youthBodyType ($weightGroup)
+{
+    $type = '';
+    
+    $slimType = array("Wiry", "Slender", "Lean", "Skinny", "Slim", "Lanky", "Frail");
+
+    shuffle($slimType);
+    
+    $mediumType = array("Medium Build", "Average Build", "Healthy body weight");
+
+    shuffle($mediumType);
+    
+    $heavyType = array("Overweight", "Plump");
+
+    shuffle($heavyType);
+
+    if($weightGroup === 1)
+    {
+        $type = $slimType[0];
+    }
+
+    if($weightGroup === 2)
+    {
+        $type = $mediumType[0];
+    }
+
+    if($weightGroup === 3)
+    {
+        $type = $heavyType[0];
+    }
+
+    return $type;
+}
+
+
+function elderMaleBodyType ($weightGroup)
+{
+    $type = '';
+    
+    $slimType = array("Slender", "Lean", "Skinny", "Slim", "Lanky", "Frail", "Underweight");
+
+    shuffle($slimType);
+    
+    $mediumType = array("Medium Build", "Average Build", "Normal body weight");
+
+    shuffle($mediumType);
+    
+    $heavyType = array("Stocky", "Paunchy", "Overweight", "Plump");
+
+    shuffle($heavyType);
+
+    if($weightGroup === 1)
+    {
+        $type = $slimType[0];
+    }
+
+    if($weightGroup === 2)
+    {
+        $type = $mediumType[0];
+    }
+
+    if($weightGroup === 3)
+    {
+        $type = $heavyType[0];
+    }
+
+    return $type;
+}
+
+
+function elderFemaleBodyType ($weightGroup)
+{
+    $type = '';
+    
+    $slimType = array("Slender", "Lean", "Skinny", "Slim", "Lanky", "Frail", "Underweight");
+
+    shuffle($slimType);
+    
+    $mediumType = array("Medium Build", "Average Build", "Normal body weight");
+
+    shuffle($mediumType);
+    
+    $heavyType = array("Full-figured", "Overweight");
+
+    shuffle($heavyType);
+
+    if($weightGroup === 1)
+    {
+        $type = $slimType[0];
+    }
+
+    if($weightGroup === 2)
+    {
+        $type = $mediumType[0];
+    }
+
+    if($weightGroup === 3)
+    {
+        $type = $heavyType[0];
+    }
+
+    return $type;
+}
+
+
+
+function getBodyDescription ($weightGroup, $ageGroup, $sex)
 {
     $description = '';
 
-    $description = adultMaleBodyType ($weightGroup);
+    if($ageGroup === 'Youth')
+    {
+        $description = youthBodyType ($weightGroup);
+    }
+
+    
+    if($ageGroup === 'Adult' || $ageGroup === 'Middle Age')
+    {
+        if($sex === 'Male')
+        {
+            $description = adultMaleBodyType ($weightGroup);
+        }
+        
+        if($sex === 'Female')
+        {
+            $description = adultFemaleBodyType ($weightGroup);
+        }
+
+    }
+
+    
+    
+    if($ageGroup === 'Elder')
+    {
+        if($sex === 'Male')
+        {
+            $description = elderMaleBodyType ($weightGroup);
+        }
+        
+        if($sex === 'Female')
+        {
+            $description = elderFemaleBodyType ($weightGroup);
+        }
+
+    }
 
     return $description;
 }
