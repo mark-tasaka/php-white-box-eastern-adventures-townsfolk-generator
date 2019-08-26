@@ -33,6 +33,7 @@
         include 'php/heightWeight.php';
         include 'php/literacy.php';
         include 'php/hitDice.php';
+        include 'php/physicalTraits.php';
         
         
         
@@ -182,7 +183,7 @@
 
         $weight0 = getWeight($baseWeight0, $weightGroup0, $groupMod0);
 
-        $bodyTypeDescription0 = getBodyDescription ($weightGroup0);
+        $bodyTypeDescription0 = getBodyDescription ($weightGroup0, $ageCat0, $sex0);
 
         $hitDiceCat0 = getHitDiceCat($ageCat0);
 
