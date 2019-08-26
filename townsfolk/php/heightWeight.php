@@ -405,7 +405,7 @@ function elderFemaleBodyType ($weightGroup)
 
     shuffle($slimType);
     
-    $mediumType = array("Medium Build", "Average Build", "Normal body weight");
+    $mediumType = array("Medium build", "Average build", "Normal body weight");
 
     shuffle($mediumType);
     

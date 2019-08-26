@@ -194,6 +194,8 @@
         $save0 = getSave ($hitDiceCat0);
 
         $literacy0 = getLiteracy ($ageCat0);
+
+        $hair0 = getHairStyle();
         
         
         ?>
@@ -274,7 +276,7 @@
             
             <span id="physical0">
                 <?php
-                echo $bodyTypeDescription0 . ',';
+                echo $bodyTypeDescription0 . ', ' . $hair0;
                 ?>
             </span>
 
