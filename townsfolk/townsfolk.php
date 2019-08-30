@@ -195,7 +195,9 @@
 
         $literacy0 = getLiteracy ($ageCat0);
 
-        $hair0 = getHairStyle();
+        $hair0 = getHairStyle($ageCat0, $sex0);
+
+        $face0 = getFacialFeatures ($sex0);
         
         
         ?>
@@ -276,7 +278,7 @@
             
             <span id="physical0">
                 <?php
-                echo $bodyTypeDescription0 . ', ' . $hair0;
+                echo $bodyTypeDescription0 . ', ' . $hair0 . ', ' . $face0;
                 ?>
             </span>
 
