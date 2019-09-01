@@ -198,6 +198,8 @@
         $hair0 = getHairStyle($ageCat0, $sex0);
 
         $face0 = getFacialFeatures ($sex0);
+
+        $traits0 = getPhysicalTraits3 ($sex0, $ageCat0);
         
         
         ?>
@@ -278,7 +280,7 @@
             
             <span id="physical0">
                 <?php
-                echo $bodyTypeDescription0 . ', ' . $hair0 . ', ' . $face0;
+                echo $bodyTypeDescription0 . ', ' . $hair0 . ', ' . $face0 . ' & ' . $traits0;
                 ?>
             </span>
 

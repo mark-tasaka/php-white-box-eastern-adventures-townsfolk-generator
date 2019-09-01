@@ -195,5 +195,111 @@ function getFacialFeatures ($sex)
 
 
 
+function physicalTraits3AdultMale ()
+{
+    $trait = '';
+
+    $features = array("rough callused hands", "missing index finger", "missing little finger",  "has a noticeable birthmark on left cheek", "has a noticeable birthmark on right cheek", "a serious expression", "a pleasant smile", "a silly grin", "a carefree way of walking", "ink stained hands", "a tired expression", "walks with a slight limp", "walks with a noticeable limp", "has oily skin", "a confident way of walking", "an authoritarian presence", "a sinister expression", "a gruff expression");
+    
+    shuffle($features);
+
+    $trait = $features[0];
+
+    return $trait;
+
+}
+
+
+function physicalTraits3AdultFemale ()
+{
+    $trait = '';
+
+    $features = array("a beauty mark on left cheek", "small delicate fingers", "well manicured hands",  "has a noticeable birthmark on left cheek", "has a noticeable birthmark on right cheek", "a serious expression", "a pleasant smile", "a silly grin", "a carefree way of walking", "ink stained hands", "a tired expression", "walks with a slight limp", "soft fair skin", "has oily skin", "a confident way of walking", "an authoritarian presence", "a sinister expression", "scent of strong perfume", "wears excessive makeup");
+    
+    shuffle($features);
+
+    $trait = $features[0];
+
+    return $trait;
+
+}
+
+
+function physicalTraits3Youth ()
+{
+    $trait = '';
+
+    $features = array("cheerful expression", "mischievous smile", "pleasant smile", "silly grin", "carefree way of walking", "mild acne", "severe acne", "rosy red cheeks");
+    
+    shuffle($features);
+
+    $trait = $features[0];
+
+    return $trait;
+
+}
+
+function physicalTraits3Elder ()
+{
+    $trait = '';
+
+    $features = array("haggard look", "weather-worn tanned skin", "crooked fingers",  "has a noticeable birthmark on left cheek", "has a noticeable birthmark on right cheek", "a serious expression", "a pleasant smile", "a silly grin", "a carefree way of walking", "lethargic way of walking", "a tired expression", "walks with a slight limp", "walks with a noticeable limp", "misshapen fingers", "seasoned winkled skin", "an authoritarian presence", "dry leathery skin", "a gruff expression");
+    
+    shuffle($features);
+
+    $trait = $features[0];
+
+    return $trait;
+
+}
+
+
+
+
+function getPhysicalTraits3 ($sex, $age)
+{
+    $trait = '';
+
+    if($sex === 'Male')
+    {
+        if($age === 'Youth')
+        {
+            $trait = physicalTraits3Youth ();
+        }
+        
+        if($age === 'Adult' || $age === 'Middle Age')
+        {
+            $trait = physicalTraits3AdultMale ();
+        }
+        
+        if($age === 'Elder')
+        {
+            $trait = physicalTraits3Elder ();
+        }
+    }
+    
+    if($sex === 'Female')
+    {
+        if($age === 'Youth')
+        {
+            $trait = physicalTraits3Youth ();
+        }
+        
+        if($age === 'Adult' || $age === 'Middle Age')
+        {
+            $trait = physicalTraits3AdultFemale ();
+        }
+        
+        if($age === 'Elder')
+        {
+            $trait = physicalTraits3Elder ();
+        }
+    }
+    
+    return $trait;
+}
+
+
+
 
 ?>
