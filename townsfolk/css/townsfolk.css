@@ -181,6 +181,7 @@ body{
     top: 105px;
     left: 140px;
     font-size: 0.8em;
+    width: 350px;
 }
 
 #hitDice0, #hitDice1, #hitDice2, #hitDice3, #hitDice4, #hitDice5, #hitDice6, #hitDice7, #hitDice8, #hitDice9,  #hitDice10, #hitDice11{
