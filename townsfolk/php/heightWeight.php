@@ -131,7 +131,7 @@ function getHeight($cat)
 
 function baseWeight($cat, $sex, $age)
 {
-    $base = 70;
+    $base = 75;
     $adjustAge = 0;
     $adjustSex = 0;
     $baseWeight = 0;
@@ -139,7 +139,7 @@ function baseWeight($cat, $sex, $age)
     
     if($sex === 'Male')
     {
-        $adjustSex = 20;
+        $adjustSex = 15;
     }
     
     if($age === 'Adult')
@@ -249,7 +249,7 @@ function getWeight($baseWeight, $weightGroup, $heightGroup)
         for($i = 0; $i < $heightGroup; ++$i)
         {
             $tempHold = 0;
-            $tempHold = rand(4,9);
+            $tempHold = rand(6,9);
             $adjust += $tempHold;
         }
     }

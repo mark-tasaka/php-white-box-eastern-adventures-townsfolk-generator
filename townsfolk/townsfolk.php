@@ -683,8 +683,943 @@
 
         </aside>
         
+
+                
+        <!-- right 2 -->
+        <aside id="right2">
+            
+                        
+            <span id="sex3">
+                <?php
+                
+                echo $displaySex3;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name3">
+                <?php
+                
+                echo $townsfolkName3;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality3">
+                <?php
+                
+                echo $townsfolkPersonality3;
+                
+                ?>
+            </span>
+
+            <span id="ac3">
+                <?php
+                
+                echo $armourClass3;
+                
+                ?>
+            </span>
+
+            <span id="move3">
+                <?php
+                
+                echo $speed3;
+                
+                ?>
+            </span>
+
+            
+            <span id="age3">
+                <?php
+                
+                echo $age3 . ' (' . $ageCat3 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height3">
+                <?php
+                echo $height3;
+                ?>
+            </span>
+
+            
+
+            <span id="weight3">
+                <?php
+                echo  $weight3 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical3">
+                <?php
+                echo $bodyTypeDescription3 . ', ' . $hair3 . ', ' . $face3 . ' & ' . $traits3;
+                ?>
+            </span>
+
+            
+            <span id="hitDice3">
+                <?php
+                echo $hitDice3;
+                ?>
+            </span>
+            
+            <span id="hp3">
+                <?php
+                echo $hitPoints3;
+                ?>
+            </span>
+            
+            <span id="save3">
+                <?php
+                echo $save3;
+                ?>
+            </span>
+
+            <span id="literacy3">
+                <?php
+                echo $literacy3;
+                ?>
+            </span>
+
+        </aside>
+
+                        
+        <!-- left 3 -->
+        <aside id="left3">
+            
+                        
+            <span id="sex4">
+                <?php
+                
+                echo $displaySex4;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name4">
+                <?php
+                
+                echo $townsfolkName4;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality4">
+                <?php
+                
+                echo $townsfolkPersonality4;
+                
+                ?>
+            </span>
+
+            <span id="ac4">
+                <?php
+                
+                echo $armourClass4;
+                
+                ?>
+            </span>
+
+            <span id="move4">
+                <?php
+                
+                echo $speed4;
+                
+                ?>
+            </span>
+
+            
+            <span id="age4">
+                <?php
+                
+                echo $age4 . ' (' . $ageCat4 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height4">
+                <?php
+                echo $height4;
+                ?>
+            </span>
+
+            
+
+            <span id="weight4">
+                <?php
+                echo  $weight4 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical4">
+                <?php
+                echo $bodyTypeDescription4 . ', ' . $hair4 . ', ' . $face4 . ' & ' . $traits4;
+                ?>
+            </span>
+
+            
+            <span id="hitDice4">
+                <?php
+                echo $hitDice4;
+                ?>
+            </span>
+            
+            <span id="hp4">
+                <?php
+                echo $hitPoints4;
+                ?>
+            </span>
+            
+            <span id="save4">
+                <?php
+                echo $save4;
+                ?>
+            </span>
+
+            <span id="literacy4">
+                <?php
+                echo $literacy4;
+                ?>
+            </span>
+
+        </aside>
+        
+                                
+        <!-- right 3 -->
+        <aside id="right3">
+            
+                        
+            <span id="sex5">
+                <?php
+                
+                echo $displaySex5;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name5">
+                <?php
+                
+                echo $townsfolkName5;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality5">
+                <?php
+                
+                echo $townsfolkPersonality5;
+                
+                ?>
+            </span>
+
+            <span id="ac5">
+                <?php
+                
+                echo $armourClass5;
+                
+                ?>
+            </span>
+
+            <span id="move5">
+                <?php
+                
+                echo $speed5;
+                
+                ?>
+            </span>
+
+            
+            <span id="age5">
+                <?php
+                
+                echo $age5 . ' (' . $ageCat5 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height5">
+                <?php
+                echo $height5;
+                ?>
+            </span>
+
+            
+
+            <span id="weight5">
+                <?php
+                echo  $weight5 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical5">
+                <?php
+                echo $bodyTypeDescription5 . ', ' . $hair5 . ', ' . $face5 . ' & ' . $traits5;
+                ?>
+            </span>
+
+            
+            <span id="hitDice5">
+                <?php
+                echo $hitDice5;
+                ?>
+            </span>
+            
+            <span id="hp5">
+                <?php
+                echo $hitPoints5;
+                ?>
+            </span>
+            
+            <span id="save5">
+                <?php
+                echo $save5;
+                ?>
+            </span>
+
+            <span id="literacy5">
+                <?php
+                echo $literacy5;
+                ?>
+            </span>
+
+        </aside>
+        
+                                        
+        <!-- left 4 -->
+        <aside id="left4">
+            
+                        
+            <span id="sex6">
+                <?php
+                
+                echo $displaySex6;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name6">
+                <?php
+                
+                echo $townsfolkName6;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality6">
+                <?php
+                
+                echo $townsfolkPersonality6;
+                
+                ?>
+            </span>
+
+            <span id="ac6">
+                <?php
+                
+                echo $armourClass6;
+                
+                ?>
+            </span>
+
+            <span id="move6">
+                <?php
+                
+                echo $speed6;
+                
+                ?>
+            </span>
+
+            
+            <span id="age6">
+                <?php
+                
+                echo $age6 . ' (' . $ageCat6 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height6">
+                <?php
+                echo $height6;
+                ?>
+            </span>
+
+            
+
+            <span id="weight6">
+                <?php
+                echo  $weight6 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical6">
+                <?php
+                echo $bodyTypeDescription6 . ', ' . $hair6 . ', ' . $face6 . ' & ' . $traits6;
+                ?>
+            </span>
+
+            
+            <span id="hitDice6">
+                <?php
+                echo $hitDice6;
+                ?>
+            </span>
+            
+            <span id="hp6">
+                <?php
+                echo $hitPoints6;
+                ?>
+            </span>
+            
+            <span id="save6">
+                <?php
+                echo $save6;
+                ?>
+            </span>
+
+            <span id="literacy6">
+                <?php
+                echo $literacy6;
+                ?>
+            </span>
+
+        </aside>
+                                         
+        <!-- right 4 -->
+        <aside id="right4">
+            
+                        
+            <span id="sex7">
+                <?php
+                
+                echo $displaySex7;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name7">
+                <?php
+                
+                echo $townsfolkName7;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality7">
+                <?php
+                
+                echo $townsfolkPersonality7;
+                
+                ?>
+            </span>
+
+            <span id="ac7">
+                <?php
+                
+                echo $armourClass7;
+                
+                ?>
+            </span>
+
+            <span id="move7">
+                <?php
+                
+                echo $speed7;
+                
+                ?>
+            </span>
+
+            
+            <span id="age7">
+                <?php
+                
+                echo $age7 . ' (' . $ageCat7 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height7">
+                <?php
+                echo $height7;
+                ?>
+            </span>
+
+            
+
+            <span id="weight7">
+                <?php
+                echo  $weight7 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical7">
+                <?php
+                echo $bodyTypeDescription7 . ', ' . $hair7 . ', ' . $face7 . ' & ' . $traits7;
+                ?>
+            </span>
+
+            
+            <span id="hitDice7">
+                <?php
+                echo $hitDice7;
+                ?>
+            </span>
+            
+            <span id="hp7">
+                <?php
+                echo $hitPoints7;
+                ?>
+            </span>
+            
+            <span id="save7">
+                <?php
+                echo $save7;
+                ?>
+            </span>
+
+            <span id="literacy7">
+                <?php
+                echo $literacy7;
+                ?>
+            </span>
+
+        </aside>
+        
+                                              
+        <!-- left 5 -->
+        <aside id="left5">
+            
+                        
+            <span id="sex8">
+                <?php
+                
+                echo $displaySex8;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name8">
+                <?php
+                
+                echo $townsfolkName8;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality8">
+                <?php
+                
+                echo $townsfolkPersonality8;
+                
+                ?>
+            </span>
+
+            <span id="ac8">
+                <?php
+                
+                echo $armourClass8;
+                
+                ?>
+            </span>
+
+            <span id="move8">
+                <?php
+                
+                echo $speed8;
+                
+                ?>
+            </span>
+
+            
+            <span id="age8">
+                <?php
+                
+                echo $age8 . ' (' . $ageCat8 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height8">
+                <?php
+                echo $height8;
+                ?>
+            </span>
+
+            
+
+            <span id="weight8">
+                <?php
+                echo  $weight8 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical8">
+                <?php
+                echo $bodyTypeDescription8 . ', ' . $hair8 . ', ' . $face8 . ' & ' . $traits8;
+                ?>
+            </span>
+
+            
+            <span id="hitDice8">
+                <?php
+                echo $hitDice8;
+                ?>
+            </span>
+            
+            <span id="hp8">
+                <?php
+                echo $hitPoints8;
+                ?>
+            </span>
+            
+            <span id="save8">
+                <?php
+                echo $save8;
+                ?>
+            </span>
+
+            <span id="literacy8">
+                <?php
+                echo $literacy8;
+                ?>
+            </span>
+
+        </aside>
+        
+                                                  
+        <!-- right 5 -->
+        <aside id="right5">
+            
+                        
+            <span id="sex9">
+                <?php
+                
+                echo $displaySex9;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name9">
+                <?php
+                
+                echo $townsfolkName9;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality9">
+                <?php
+                
+                echo $townsfolkPersonality9;
+                
+                ?>
+            </span>
+
+            <span id="ac9">
+                <?php
+                
+                echo $armourClass9;
+                
+                ?>
+            </span>
+
+            <span id="move9">
+                <?php
+                
+                echo $speed9;
+                
+                ?>
+            </span>
+
+            
+            <span id="age9">
+                <?php
+                
+                echo $age9 . ' (' . $ageCat9 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height9">
+                <?php
+                echo $height9;
+                ?>
+            </span>
+
+            
+
+            <span id="weight9">
+                <?php
+                echo  $weight9 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical9">
+                <?php
+                echo $bodyTypeDescription9 . ', ' . $hair9 . ', ' . $face9 . ' & ' . $traits9;
+                ?>
+            </span>
+
+            
+            <span id="hitDice9">
+                <?php
+                echo $hitDice9;
+                ?>
+            </span>
+            
+            <span id="hp9">
+                <?php
+                echo $hitPoints9;
+                ?>
+            </span>
+            
+            <span id="save9">
+                <?php
+                echo $save9;
+                ?>
+            </span>
+
+            <span id="literacy9">
+                <?php
+                echo $literacy9;
+                ?>
+            </span>
+
+        </aside>
+        
+                                                          
+        <!-- left 6 -->
+        <aside id="left6">
+            
+                        
+            <span id="sex10">
+                <?php
+                
+                echo $displaySex10;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name10">
+                <?php
+                
+                echo $townsfolkName10;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality10">
+                <?php
+                
+                echo $townsfolkPersonality10;
+                
+                ?>
+            </span>
+
+            <span id="ac10">
+                <?php
+                
+                echo $armourClass10;
+                
+                ?>
+            </span>
+
+            <span id="move10">
+                <?php
+                
+                echo $speed10;
+                
+                ?>
+            </span>
+
+            
+            <span id="age10">
+                <?php
+                
+                echo $age10 . ' (' . $ageCat10 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height10">
+                <?php
+                echo $height10;
+                ?>
+            </span>
+
+            
+
+            <span id="weight10">
+                <?php
+                echo  $weight10 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical10">
+                <?php
+                echo $bodyTypeDescription10 . ', ' . $hair10 . ', ' . $face10 . ' & ' . $traits10;
+                ?>
+            </span>
+
+            
+            <span id="hitDice10">
+                <?php
+                echo $hitDice10;
+                ?>
+            </span>
+            
+            <span id="hp10">
+                <?php
+                echo $hitPoints10;
+                ?>
+            </span>
+            
+            <span id="save10">
+                <?php
+                echo $save10;
+                ?>
+            </span>
+
+            <span id="literacy10">
+                <?php
+                echo $literacy10;
+                ?>
+            </span>
+
+        </aside>
         
         
+              <!-- right 6 -->
+              <aside id="right6">
+            
+                        
+            <span id="sex11">
+                <?php
+                
+                echo $displaySex11;
+                
+                ?>
+            </span>
+            
+            
+            <span id="name11">
+                <?php
+                
+                echo $townsfolkName11;
+                
+                ?>
+            </span>
+            
+            
+            <span id="personality11">
+                <?php
+                
+                echo $townsfolkPersonality11;
+                
+                ?>
+            </span>
+
+            <span id="ac11">
+                <?php
+                
+                echo $armourClass11;
+                
+                ?>
+            </span>
+
+            <span id="move11">
+                <?php
+                
+                echo $speed11;
+                
+                ?>
+            </span>
+
+            
+            <span id="age11">
+                <?php
+                
+                echo $age11 . ' (' . $ageCat11 . ')';
+                
+                ?>
+            </span>
+
+            
+            <span id="height11">
+                <?php
+                echo $height11;
+                ?>
+            </span>
+
+            
+
+            <span id="weight11">
+                <?php
+                echo  $weight11 . ' lb.';
+                ?>
+            </span>
+            
+            <span id="physical11">
+                <?php
+                echo $bodyTypeDescription11 . ', ' . $hair11 . ', ' . $face11 . ' & ' . $traits11;
+                ?>
+            </span>
+
+            
+            <span id="hitDice11">
+                <?php
+                echo $hitDice11;
+                ?>
+            </span>
+            
+            <span id="hp11">
+                <?php
+                echo $hitPoints11;
+                ?>
+            </span>
+            
+            <span id="save11">
+                <?php
+                echo $save11;
+                ?>
+            </span>
+
+            <span id="literacy11">
+                <?php
+                echo $literacy11;
+                ?>
+            </span>
+
+        </aside>
+        
+  
         <!-- JavaScript -->
         <script>
             

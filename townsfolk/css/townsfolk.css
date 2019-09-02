@@ -63,7 +63,7 @@ body{
 
 #left4{
 	position:absolute;
-	top: 648px;
+	top: 646px;
 	left: 0px;
 	width: 500px;
 	
@@ -71,7 +71,7 @@ body{
 
 #right4{
 	position:absolute;
-	top: 648px;
+	top: 646px;
 	left: 500px;
 	width: 500px;
 	
@@ -79,7 +79,7 @@ body{
 
 #left5{
 	position:absolute;
-	top: 864px;
+	top: 860px;
 	left: 0px;
 	width: 500px;
 	
@@ -87,24 +87,24 @@ body{
 
 #right5{
 	position:absolute;
-	top: 864px;
+	top: 860px;
 	left: 500px;
 	width: 500px;
 	
 }
 
 
-#left5{
+#left6{
 	position:absolute;
-	top: 1080px;
+	top: 1074px;
 	left: 0px;
 	width: 500px;
 	
 }
 
-#right5{
+#right6{
 	position:absolute;
-	top: 1080px;
+	top: 1074px;
 	left: 500px;
 	width: 500px;
 	

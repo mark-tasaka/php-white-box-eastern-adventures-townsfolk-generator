@@ -136,7 +136,7 @@ function elderLiteracy()
     }
     else if($ranNum >= 19 && $ranNum <= 20)
     {
-        $literacy = 'Confused speech as a result of onset of dementia';
+        $literacy = 'Confused speech as the result of onset of dementia';
     }
 
     return $literacy;
